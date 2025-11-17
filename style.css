@@ -840,4 +840,33 @@ body {
         font-size: 14px;
     }
 }
+/* our gallery  */
+
+.gallery-section {
+  width: 100%;
+  padding: 60px 0;
+  text-align: center;
+  background: #ffffff;
+}
+
+.gallery-title {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  background: linear-gradient(to right, #36c6ff, #ff3fbe);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.gallery-section img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.swiper {
+  width: 90%;
+  max-width: 1300px;
+}
 
