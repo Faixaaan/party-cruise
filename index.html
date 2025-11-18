@@ -641,5 +641,32 @@
             }
         });
     </script>
+    <script>
+    function setActiveNav() {
+        const currentHash = window.location.hash || "#home"; 
+        const links = document.querySelectorAll(".navbar .nav-link");
+
+        links.forEach(link => {
+            link.classList.remove("active");
+
+            if (link.getAttribute("href") === currentHash) {
+                link.classList.add("active");
+            }
+
+            // For pages like /about.html
+            if (link.getAttribute("href") === window.location.pathname) {
+                link.classList.add("active");
+            }
+        });
+    }
+
+    // Activate on load
+    setActiveNav();
+
+    // Activate on hash change (scroll to section)
+    window.addEventListener("hashchange", setActiveNav);
+</script>
+
+
 
 </body>

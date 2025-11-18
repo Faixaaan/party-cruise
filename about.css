@@ -1,3 +1,18 @@
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #111;
+}
+
+.content-section p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555;
+}
+
+.img-fluid {
+    border-radius: 12px;
+}
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
@@ -225,14 +240,6 @@ body {
 }
 
 /* Content Section */
-.content-section {
-    padding: 80px 0;
-    background-image: url('./image/turtle.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    position: relative;
-}
 
 
 
