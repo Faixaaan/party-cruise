@@ -33,11 +33,11 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="/about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#boats">Our Boats</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Our Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#blogs">Blogs</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/boat.html">Our Boats</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/service.html">Our Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/blog.html">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact.html">Contact Us</a></li>
                 </ul>
             </div>
         </div>
@@ -45,9 +45,19 @@
 
     <!-- Hero Section -->
     <section class="hero-section" id="home">
-        <div class="play-button">
-            <i class="fas fa-play"></i>
+        <!-- Video Background -->
+        <div class="video-background">
+            <video autoplay muted loop playsinline id="heroVideo" poster="./assets/image/hero-banner.png">
+                <source src="./assets/video/mov_bbb.mp4" type="video/mp4">
+                <!-- Add more video formats for better browser support -->
+                <source src="./assets/video/mov_bbb.webm" type="video/webm">
+                <!-- Fallback image if video doesn't load -->
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay"></div>
         </div>
+
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -66,20 +76,19 @@
     </section>
 
 
-
     <!-- content section2 -->
     <!-- Content Section -->
     <section class="content-section py-5">
         <div class="container">
 
             <!-- Row 1 -->
-            <div class="row align-items-center mb-5 ">
+            <div class="row align-items-start mb-5 ">
                 <div class="col-lg-6">
                     <img src="https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?w=800" alt="Party Boat"
                         class="img-fluid rounded shadow">
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-6 py-3">
                     <h2 class="section-title mb-3">Party Boat Hire – Enjoy Your Day in Style</h2>
                     <p>
                         Experience the Gold Coast like never before with our luxury party boats.
@@ -94,13 +103,13 @@
             </div>
 
             <!-- Row 2 (Image Right) -->
-            <div class="row align-items-center flex-lg-row-reverse mt-12">
+            <div class="row align-items-start flex-lg-row-reverse mt-12">
                 <div class="col-lg-6">
                     <img src="https://images.unsplash.com/photo-1761839257469-96c78a7c2dd3?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Boat Cruise"
                         class="img-fluid rounded shadow">
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-6 py-3">
                     <h2 class="section-title mb-3">Why Choose Our Cruises?</h2>
                     <p>
                         We offer a complete entertainment package on the water — from large deck
@@ -124,7 +133,7 @@
 
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" style="background-image: url(./assets/image/footer.png);">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mb-4 mb-lg-0">
